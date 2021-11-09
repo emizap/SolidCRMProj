@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 80;
+}
+
+.dashboardHome{
+    background-color: #F8F8F8;
+    position:relative;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.SideBar{
+    background-color: #F8F8F8;
+    float:left;
+    width:320px;
+    height: 100vh;
+    
+}
