@@ -17,7 +17,9 @@ const Dashboard = () =>{
                  </div>
             </div>
             <div className="dataArea">
-
+                <div>
+                    <input type="text" placeholder="   Search customers by name" className="searchBox"/>
+                </div>
             </div>
         </div>
     )
