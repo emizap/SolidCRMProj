@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import 'font-awesome/css/font-awesome.min.css';
 import logo2 from './logo2.svg';
 import clock from './clock.svg';
 
@@ -18,7 +19,11 @@ const Dashboard = () =>{
             </div>
             <div className="dataArea">
                 <div>
-                    <input type="text" placeholder="   Search customers by name" className="searchBox"/>
+                    <input type="text" placeholder=" &#xF002;  Search customers by name" className="searchBox"/> <p>Filter by: <select>
+                        <option>7 Days</option>
+                        <option>14 Days</option>
+                        <option>21 Days</option>
+                        </select></p>
                 </div>
             </div>
         </div>

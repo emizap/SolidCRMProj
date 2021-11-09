@@ -85,7 +85,7 @@ h4{
 }
 
 .searchBox{
-    font-family: 'Poppins';
+    font-family: 'Poppins',FontAwesome;
     font-size: 10px;
     font-weight: bold;
     margin-top: 15px;
@@ -97,4 +97,8 @@ h4{
     top:129px;
     background: #F7F9FA;
     border-radius: 13px;
+}
+
+#bloc1,#bloc2{
+    display: inline;
 }
