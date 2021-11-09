@@ -99,6 +99,17 @@ h4{
     border-radius: 13px;
 }
 
-#bloc1,#bloc2{
+.SearchFilterClass{
+    font-size: 10px;
+    font-weight: bold;
     display: inline;
+    justify-content: flex-end;
+}
+
+.MySelector{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid #C0C0C0;
 }
