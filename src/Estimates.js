@@ -6,21 +6,25 @@ import clock from './clock.svg';
 
 const Estimates = () => {
 
-    function openPage(pageName,elmnt){
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
+    function SwitchTabs(panelIndex, colorCode){
+        var btn = document.querySelectorAll(".estimates_area .btnContainer button");
+        var panels = document.querySelectorAll(".estimates_area .tabPanel");
+        
+            btn.forEach(function(node){
+                node.style.backgroundColor="";
+                node.style.color="";
+            });
+            btn[panelIndex].style.backgroundColor = colorCode;
+            btn[panelIndex].style.color = "black";
+        
+            panels.forEach(function(node){
+                node.style.display="none";
+            });
+                panels[panelIndex].style.display="block";
+                panels[panelIndex].style.backgroundColor=colorCode;
         }
 
-        document.getElementById(pageName).style.display = "block";
-    }
+        SwitchTabs(0,'#ffff')
 
     return (
         <div className="dashboardHome">
@@ -42,21 +46,13 @@ const Estimates = () => {
                         <option>21 Days</option>
                     </select></p>
                 </div>
-
-                &nbsp;&nbsp;<button className="estimates_area" onClick={openPage('upcoming_estimates',this)}>Upcoming Estimates</button>&nbsp;
-                <button onClick={openPage('estimates_sent',this)}>Estimates Sent</button>
                 <div className="estimates_area">
-                <div>
-                    <div id="upcoming_estimates" className="">
-                        <h2>upcoming Estimates</h2>
-                        <p>This area is for upcoming estimates</p>
-                    </div>
-
-                    <div id="estimates_sent" className="">
-                    <h2>Sent Estimates</h2>
-                        <p>This area is for Sent Estimates</p>
-                    </div>
-                </div>
+                        <div className="btnContainer">
+                            <button onClick={SwitchTabs('0','#FFFF')}>Upcoming Estimates</button>&nbsp; &nbsp;
+                            <button onClick={SwitchTabs('1','#FFFF')}>Estimates Sent</button>
+                        </div>
+                        <div className="tabPanel">Upcoming Estimates</div>
+                        <div className="tabPanel">Estimates Sent</div>
                 </div>
             </div>
         </div>

@@ -116,4 +116,36 @@ h4{
 
 .estimates_area{
     margin-top: 15px;
+    width: 100%;
+}
+
+.estimates_area .btnContainer{
+    height: 10%;
+}
+
+.estimates_area .btnContainer button{
+    background-color: #ffff;
+    font-weight: bold;
+    width: 15%;
+    height:100%;
+    float:left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    padding:10px;
+    font-family: 'Poppins';
+    font-size: 13px;
+}
+
+.estimates_area .btnContainer button:hover{
+    border-bottom: 4px solid #1A73E8;
+}
+
+.estimates_area .tabPanel{
+    height: 45%;
+    background-color: #ffff;
+    box-sizing: border-box;
+    padding-top: 85px;
+    font-size: 13px;
+    display:none;
 }
