@@ -48,8 +48,8 @@ const Estimates = () => {
                 </div>
                 <div className="estimates_area">
                         <div className="btnContainer">
-                            <button onClick={SwitchTabs('0','#FFFF')}>Upcoming Estimates</button>&nbsp; &nbsp;
-                            <button onClick={SwitchTabs('1','#FFFF')}>Estimates Sent</button>
+                            <button onClick={SwitchTabs(0,'#FFFF')}>Upcoming Estimates</button>&nbsp; &nbsp;
+                            <button onClick={SwitchTabs(1,'#FFFF')}>Estimates Sent</button>
                         </div>
                         <div className="tabPanel">Upcoming Estimates</div>
                         <div className="tabPanel">Estimates Sent</div>
