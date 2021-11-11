@@ -5,6 +5,23 @@ import logo2 from './logo2.svg';
 import clock from './clock.svg';
 
 const Estimates = () => {
+
+    function openPage(pageName,elmnt){
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        document.getElementById(pageName).style.display = "block";
+    }
+
     return (
         <div className="dashboardHome">
             <div className="SideBar">
@@ -24,6 +41,22 @@ const Estimates = () => {
                         <option>14 Days</option>
                         <option>21 Days</option>
                     </select></p>
+                </div>
+
+                &nbsp;&nbsp;<button className="estimates_area" onClick={openPage('upcoming_estimates',this)}>Upcoming Estimates</button>&nbsp;
+                <button onClick={openPage('estimates_sent',this)}>Estimates Sent</button>
+                <div className="estimates_area">
+                <div>
+                    <div id="upcoming_estimates" className="">
+                        <h2>upcoming Estimates</h2>
+                        <p>This area is for upcoming estimates</p>
+                    </div>
+
+                    <div id="estimates_sent" className="">
+                    <h2>Sent Estimates</h2>
+                        <p>This area is for Sent Estimates</p>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
