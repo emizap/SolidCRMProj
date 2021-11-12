@@ -14,7 +14,6 @@ function App() {
             <Route path = '/estimates' component={Estimates} />
             <Route path = '/dashboard' component={Dashboard} />
             <Route path = '/previewestimate' component={PreviewEstimate} />
-
         </Switch>
         </BrowserRouter>
   );
