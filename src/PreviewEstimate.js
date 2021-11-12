@@ -17,8 +17,12 @@ const PreviewEstimate = () =>{
                 <p className="EstimatesCxSalesArea__">Sales: Shiloh Churchill</p>
                 <p className="EstimatesCxDatesArea__">Dates: 11-02-2021</p>
             </div>
-            <div>
-                <hr className="hrMainRule"></hr>
+            <div className="hr_Demacate__">
+                <hr className="hrWebClass___"></hr>
+            </div>
+
+            <div className="EstimateOverViewRect__">
+                <p className="EstOverHeaderAreaNow__">Estimate Overview</p>
             </div>
         </div>
     );
