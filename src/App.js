@@ -12,7 +12,7 @@ function App() {
             <Route path = '/register' component={Register} />
             <Route path = '/estimates-home' component={Estimates} />
             <Route path = '/dashboard' component={Dashboard} />
-            <Route path = '/previewEstimates' component={PreviewEstimate} />
+            <Route path = '/previewestimate' component={PreviewEstimate} />
 
         </Switch>
         </BrowserRouter>
