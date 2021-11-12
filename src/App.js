@@ -10,7 +10,7 @@ function App() {
         <Switch>
             <Route path = '/' component={HomePage} exact/>
             <Route path = '/register' component={Register} />
-            <Route path = '/estimates-home' component={Estimates} />
+            <Route path = '/estimates' component={Estimates} />
             <Route path = '/dashboard' component={Dashboard} />
             <Route path = '/previewestimate' component={PreviewEstimate} />
 
